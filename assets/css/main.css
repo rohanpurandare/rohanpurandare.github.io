@@ -877,9 +877,23 @@ pre code {
   .row.gtr-200.gtr-uniform > * {
     padding-top: 5em;
   }
+
+  .otherButton {
+    position: absolute;
+    left: 80%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 }
 
 @media screen and (max-width: 1280px) {
+  .otherButton {
+    position: absolute;
+    left: 80%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -1362,6 +1376,13 @@ pre code {
 
   .row.gtr-200.gtr-uniform > * {
     padding-top: 4em;
+  }
+
+  .otherButton {
+    position: absolute;
+    left: 80%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -2557,7 +2578,7 @@ input[type="button"],
   height: calc(2.75em + 6px);
   line-height: 2.75em;
   min-width: 10em;
-  padding: 0 1.5em;
+  padding: 0em 1.5em;
   text-align: center;
   text-decoration: none;
   white-space: nowrap;
@@ -2839,10 +2860,6 @@ input[type="button"]:disabled,
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
-@media screen and (max-width: 980px) {
-  display: none;
-}
-
 /* Header */
 
 #header {
@@ -2906,6 +2923,13 @@ input[type="button"]:disabled,
 #header h5,
 #header h6 {
   color: #ffffff;
+}
+
+.otherButton {
+  position: absolute;
+  left: 67%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 #header h1 {
@@ -3354,8 +3378,21 @@ body.is-touch .poptrox-popup .closer {
     display: inline;
   }
 
+  #header img {
+    display: block;
+    margin-left: -50px;
+    margin-right: auto;
+  }
+
   .navbar {
     display: none;
+  }
+
+  .otherButton {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
 
   /* Footer */
@@ -3442,8 +3479,12 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
-    padding-top: 50px;
     padding: 2.25em 1.5em;
+  }
+
+  #header img {
+    margin-top: 25px;
+    display: inline-block;
   }
 
   #header h1 {
