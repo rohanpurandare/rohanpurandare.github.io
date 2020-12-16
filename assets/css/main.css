@@ -2838,6 +2838,11 @@ input[type="button"]:disabled,
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
+
+@media screen and (max-width: 980px) {
+  display: none;
+}
+
 /* Header */
 
 #header {
@@ -3332,6 +3337,7 @@ body.is-touch .poptrox-popup .closer {
     background-position: top left, center center;
     background-size: auto, cover;
     left: auto;
+    padding-top: 50px;
     padding: 6em 4em;
     position: relative;
     text-align: center;
@@ -3346,6 +3352,10 @@ body.is-touch .poptrox-popup .closer {
 
   #header h1 br {
     display: inline;
+  }
+
+  .navbar {
+    display: none;
   }
 
   /* Footer */
@@ -3415,6 +3425,10 @@ body.is-touch .poptrox-popup .closer {
     font-size: 1.35em;
   }
 
+  .navbar {
+    display: none;
+  }
+
   /* List */
 
   ul.labeled-icons li {
@@ -3428,11 +3442,17 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
+    padding-top: 50px;
     padding: 2.25em 1.5em;
   }
 
   #header h1 {
     font-size: 1.35em;
+  }
+
+  #navbar {
+    background-color: transparent;
+    display: none;
   }
 
   /* Footer */
@@ -3470,10 +3490,16 @@ body.is-touch .poptrox-popup .closer {
   /* Header */
 
   #header {
+    padding-top: 50px;
+
     padding: 4.5em 1.5em;
   }
 
   #header h1 br {
+    display: none;
+  }
+
+  .navbar {
     display: none;
   }
 
