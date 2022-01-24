@@ -110,7 +110,7 @@ p.exp {
 p.para {
 	line-height: 1.4;
 	margin: 0;
-	text-indent: 3em;
+	text-indent: 3em !important;
 }
 /* Basic */
 
