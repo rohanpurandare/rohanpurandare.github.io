@@ -106,6 +106,12 @@ p.exp {
 	line-height: 1.4;
 	margin: 0;
 }
+
+p.para {
+	line-height: 1.4;
+	margin: 0;
+	text-indent: 3em;
+}
 /* Basic */
 
 	@-ms-viewport {
@@ -2692,6 +2698,24 @@ p.exp {
 					margin-right: auto;
 				}
 
+		header.major h3 {
+			font-size: 1.75em;
+		}
+
+			header.major h3:after {
+				display: block;
+				content: '';
+				width: 2.25em;
+				height: 1.75px;
+				margin: 0.7em 0 1em 0;
+				border-radius: 2px;
+			}
+
+				section.special header.major h3:after, article.special header.major h2:after {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
 		header.major p {
 			font-size: 1.25em;
 			letter-spacing: -0.025em;
@@ -3579,6 +3603,14 @@ p.exp {
 		}
 
 		#main header.major h2:after {
+			background-color: #dddddd;
+			background-image: -moz-linear-gradient(90deg, #065EB1, #04847F, #01A94D);
+			background-image: -webkit-linear-gradient(90deg, #065EB1, #04847F, #01A94D);
+			background-image: -ms-linear-gradient(90deg, #065EB1, #04847F, #01A94D);
+			background-image: linear-gradient(90deg, #065EB1, #04847F, #01A94D);
+		}
+
+		#main header.major h3:after {
 			background-color: #dddddd;
 			background-image: -moz-linear-gradient(90deg, #065EB1, #04847F, #01A94D);
 			background-image: -webkit-linear-gradient(90deg, #065EB1, #04847F, #01A94D);
