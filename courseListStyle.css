@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Quicksand&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    color: #333333;
+    background-color: #821F00;
+}
+
+button {
+    background-color: transparent;
+    font-family: 'Kanit', sans-serif;
+    height: 40px;
+    opacity: 1;
+    border: 0;
+    font-size: 30px;
+    padding: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+a {
+    color: #E5E4D2;
+    text-decoration: none;
+}
+
+.content {
+    font-family: "Quicksand", sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw;
+    width: 48vw;
+    min-height: 100vh;
+    background-color: #E5E4D2;
+}
+
+.content * {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.seeMore {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.skillsSeeMore {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #821F00;
+    color: #E5E4D2;
+    border-radius: 10px;
+}
+
+.skillsSeeMore:hover, .skillsSeeMore:focus-visible {
+    transform: translateY(-0.25rem);
+    transition: transform 0.2s ease-in-out;
+}
+
+.horizontal-line {
+    border: none;
+    border-top: 1px solid #821F00; /* Set the desired color and thickness */
+    margin: 1em 0; /* Adjust the margin as needed */
+}
+
+.year {
+    margin-left: 20px;
+}
+
+.courses {
+    margin-left: 20px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -1,268 +1,311 @@
-<!DOCTYPE HTML>
-<!--
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Rohan Purandare</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="shortcut icon" type="image/jpg" href="images/favicon.jpg"/>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="png" href="assets/duck.png">
+    <title>Rohan Purandare</title>
+</head>
+<body>
+    <div class="general">
+        <div id=profile class="profile">
+            <img class="initialProfilePic" id="profilepic"src="./assets/Profile Picture.jpg" alt="Profile Picture" style="width: 70%; height:auto;"/>
+            <div class="transformedProfileInfo" id="profileInfo">
+                <h1>Rohan Purandare</h1>
+                <div class="socials">
+                    <p class="link"><a href="mailto:rpuranda@purdue.edu"><img src="./assets/email.png" alt="email" class="icons"/> rpuranda@purdue.edu</a></p>
+                    <p class="noLink"><img src="./assets/phone.png" alt="phone" class="icons"/>(617) 435-1077</p>
+                    <p class="link"><a href="https://www.github.com/rohanpurandare"><img src="./assets/github.PNG" alt="github" class="icons"/> rohanpurandare</a></p>
+                    <p class="link"><a href="https://www.linkedin.com/in/rohanpurandare"><img src="./assets/linkedin.PNG" alt="linkedin" class="icons"/>           Rohan Purandare</a></p>
+                </div>
+            </div>  
+        </div>
+        <div id="nav" class="transformedNav">
+            <button id='navButton'><a href="#intro" id="scroll-link" class="initial">Intro</a></button>
+            <button id='navButton'><a href="#aboutMe" id="scroll-link" class="initial">About me</a></button>
+            <button id='navButton'><a href="#projects" id="scroll-link" class="initial">Projects</a></button>
+            <button id='navButton'><a href="#experience" id="scroll-link" class="initial">Experience</a></button>
+            <button id='navButton'><a href="#skills" id="scroll-link" class="initial">Skills</a></button>
+        </div>
+    </div>
+    <section class="intro" id="intro">
+        <div id="introContent" class="introContent">
+            <div id="landingPage" class="landingPage">
+                <div class="greeting">
+                    <h1 class="greetingMessage">Hi! I'm Rohan</h1>
+                </div>
+                <p>Welcome to my website! Here, you can learn more <button id='greetingButton'><a href="#aboutMe" id="scroll-link" class='aboutMeButton'>about me</a></button>, the 
+                    <button id='greetingButton'><a href="#projects" id="scroll-link" class='projectsButton'>projects</a></button> that I have done in the past, my past 
+                    <button id='greetingButton'><a href="#experience" id="scroll-link" class='experienceButton'>experience</a></button> with CS, as well as my 
+                    <button id='greetingButton'><a href="#skills" id="scroll-link" class='skillsButton'>skills</a></button>.</p>
+            </div>
+            <button class="scrolldownButton"><a href="#aboutMe" id="scroll-link" class="scrolldown"><span></span>Scroll</a></button>
+        </div>
+    </section>
+    <section class="aboutMe" id="aboutMe">
+        <div class="header">
+            <h2 class="upper">Hello and welcome!!</h2>
+            <p>I am so glad that you have stumbled upon my website! I'll do my best to keep this site as up to date as possible, but if you have any questions or comments, feel free to contact me!</p>
+            <h3 class="question">Who am I?</h3>
+            <p>I'm Rohan Purandare, a senior at Purdue University in West Lafayette, Indiana. At Purdue, I am working towards getting a Bachelor's degree in Computer Science, with focuses in Software Engineering, Machine Intelligence, Security, Algorithmic Foundations, and Databases and Information Systems, and certificates in Applications of Data Science and Entrepreneurship and Innovation. I am really fascinated by all things CS and love integrating what I learn which is why I will be staying a fifth year at Purdue to complete my Master's degree through their 4+1 program.</p>
+            <h3 class="question">What do I do outside of class?</h3>
+            One of my favorite things about Purdue is the myriad of organizations that it has. There is really something for everyone! I am personally a part of three different organizations: BoilerMake, the Undergraduate Student Board for Computer Science (USB), and LaunchPad. <br /><br />
+            I am currently the Director of BoilerMake, an organization that hosts Purdue's largest hackathon. Lasting 36 hours, we give about 500 students the opportunity to work on projects, network with sponsors and other hackers, and have a fun break from school. <br /><br />
+            USB is an organization that works to improve the CS department at Purdue through their number of initiatives. Formerly the Vice-President of USB, I have now shifted my focus towards leading the Humans of Purdue CS initiative, an initiative that hopes to emulate <a href="https://www.humansofnewyork.com/" target="_blank" style="color: #333333; text-decoration: underline;">HoNY</a>. In addition to that, I am also a member of the International Student Panel, an initiative geared towards helping international students with job prospects, and CS193, an initiative geared towards freshmen in CS/DS/AI to help them learn the some of the fundamentals of CS.<br /><br />
+            LaunchPad is an organization that pairs freshmen, mentees, in a CS related major with upperclassmen, mentors, in similar majors to work on creating a project of the mentee's choosing. Within LaunchPad, I am currently the Web Dev lead where I lead a group of 4 other LaunchPad organizers to create and maintain our website. <br /><br />
+            Outside of these organizations, I am also involved in TA-ing. I have currently TA-ed CS 38100 (The Introduction of the Analysis of Algorithms) and TA-ed and taught CS 19300 (Tools). I find it to be extremely rewarding and fun as I am able to give back to the CS community while helping students find their "aha!" moment.
+            <h3 class="question">What do I do in my free time?</h3>
+            I love trying new restaurants around the West Lafayette area and playing volleyball with my friends. I am also a massive soccer fan, both in terms of playing and watching (COME ON ARSENAL!!), and I really like music. I have also recently grown fond of drawing as I find it to be a fun and creative way to unwind. If you are curious to learn what my life as a Purdue student looks like, feel free to click the button below!<br /><br />
+            <div class="seeMore">
+                <a href="./whatsup.html"><button class="aboutSeeMore">See what am I up to!</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <div class="header">
+            <h2 class="upper">What I've done</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <div class="projectPic">
+                        <img src="./assets/cow.png" alt="Mood Palette" width="100%">
+                    </div>
+                    <h3 class="projectTitle"><b>Mood Palette</b></h3>
+                    <p class="projectDescription">A web application that allows users to track their moods and receive songs to complement their moods as well as help track the users' habits.</p>
+                    <p class="projectLang">MongoDB • Express • React.js • Node.js</p>
+                </div>
+                <div class="grid-item">
+                    <div class="projectPic">
+                        <img src="./assets/launchpad.png" alt="LaunchPad Website" width="100%">
+                    </div>
+                    <h3 class="projectTitle"><b>LaunchPad Website</b></h3>
+                    <p class="projectDescription">A website for one of my organizations that provides information about LaunchPad for prospective members and sponsors.</p>
+                    <p class="projectLang">React.js</p>
+                </div>
+                <div class="grid-item">
+                    <div class="projectPic">
+                        <img src="./assets/duck.png" alt="Website Logo" width="100%">
+                    </div>
+                    <h3 class="projectTitle"><b>This Website!</b></h3>
+                    <p class="projectDescription">Project description blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                    <p class="projectLang">HTML • CSS • JavaScript</p>
+                </div>
+                <div class="grid-item">
+                    <div class="projectPic">
+                        <img src="./assets/purdue circle.png" alt="Purdue Circle" width="100%">
+                    </div>
+                    <h3 class="projectTitle"><b>Purdue Circle</b></h3>
+                    <p class="projectDescription">A mobile application to allow Purdue students to share digital content, direct message, and interact with one another.</p>
+                    <p class="projectLang">Java • Android Studio • Firebase</p>
+                </div>
+                <div class="grid-item">
+                    <div class="projectPic">
+                        <img src="./assets/dots.png" alt="Dots and Numbers" width="100%">
+                    </div>
+                    <h3 class="projectTitle"><b>Dots and Numbers</b></h3>
+                    <p class="projectDescription">A logic game inspired from a newspaper game that challenges players to create a loop on the board such that each square has as many edges as the number inside the square.</p>
+                    <p class="projectLang">HTML • CSS • JavaScript</p>
+                </div>
+                <div class="grid-item">
+                    <div class="projectPic">
+                        <img src="./assets/shell.png" alt="Shell" width="100%">
+                    </div>
+                    <h3 class="projectTitle"><b>Shell</b></h3>
+                    <p class="projectDescription">A shell interpreter that combines behaviors from common shells including bash and csh.</p>
+                    <p class="projectLang">C • C++ • Lex • Yacc</p>
+                </div>
+            </div>
+            <div class="seeMore">
+                <a href="./projects.html"><button class="projectSeeMore">See more</button></a>
+            </div>
+        </div>
+    </section>
+    <section class="experience" id="experience">
+        <div class="header">
+            <h2 class="upper">Where I've worked</h2>
+            <h3 class="jobType">Industry Experience</h3>
+            <hr class="horizontal-line">
+            <div class="experienceContent">
+                <h3 class="employer">Amazon Web Services - SDE Intern</h3>
+                <p class="jobInfo"><i>Bellevue, WA • May 2023 - Present</i></p>
+                <hr class="horizontal-line">
+                <h3 class="employer">Amazon Web Services - SDE Intern</h3>
+                <p class="jobInfo"><i>Seattle, WA • May 2022 - August 2022</i></p>
+                <p>Over the course of 12 weeks, I worked on an AWS Product called AppStream, specifically on their Photon Ops Console, a web-based tool that is used by on-calls to audit and troubleshoot different issues that arise. The current data retrieval process for the Photon Ops Console was working inefficiently as it only stored 3 days worth of data and incurred relatively high costs. I was tasked to create a pipeline that would retrieve data relating to the different streaming instances as well as data logs directly from the data base. I did this by querying the search parameters from the user in the database, filtering the data to remove irrelevant information, and then reformatting and returning the data so that it would be displayed properly.</p>
+                <hr class="horizontal-line">
+                <h3 class="employer">PTC - Product Software Engineer Intern</h3>
+                <p class="jobInfo">Boston, MA • June 2021 - August 2021</p>
+                <p>Over the course of a ten-week long period, I interned with the PTC's Creo team. Over here, I specifically worked with their collaboration service team, who are responsible for allowing users to collaborate on the same 3D modeling document in Creo. My job was to automate the API Specification as it was previously written by hand. I incorporated a third-party tool called go-swagger and modified the code and wrote an external program to allow go-swagger to parse through the code and generate an API Spec. From here, I utilized another third-party tool called swagger2openapi to convert the API Spec from Swagger 2.0 to OpenAPI 3.0.0</p>
+            </div>
+            <hr class="horizontal-line">
+            <br />
+            <h3 class="jobType">Teaching Experience</h3>
+            <hr class="horizontal-line">
+            <div class="experienceContent">
+                <h3 class="employer">Undergraduate Teaching Assistant - Purdue University</h3>
+                <p class="jobInfo"><i>West Lafayette, IN • August 2021 - Present</i></p>
+                <p>For CS 38100 (Introduction to the Analysis of Algorithms) and CS 19300 (Tools) I graded homeworks, proctored exams, held office hours as well as conducted Practice/Study/Observation (PSO) sessions. In these PSOs, we would provide sample problems, explain the solutions to those problems, answer any questions that students had.</p>
+                <hr class="horizontal-line">
+                <h3 class="employer">CS 19300 (Tools) Course Lead - Purdue University</h3>
+                <p class="jobInfo"><i>West Lafayette, IN • January 2022 - December 2022</i></p>
+                <p>I taught students (approximately 700 students), the basics of git, terminal, and various programming techniques to help them create a strong foundation for programming in their later years at Purdue. In addition to this, I also deal with communicating and hiring the Undergraduate Teaching Assistants for this class.</p>
+                <hr class="horizontal-line">
+                <h3 class="employer">CS and Math Tutor - Self-Employed</h3>
+                <p class="jobInfo"><i>Virtual • July 2019 - August 2022</i></p>
+                <p>I taught students (approximately 700 students), the basics of git, terminal, and various programming techniques to help them create a strong foundation for programming in their later years at Purdue. In addition to this, I also deal with communicating and hiring the Undergraduate Teaching Assistants for this class.</p>
+            </div>
+            <hr class="horizontal-line">
+        </div>
+    </section>
+    <section class="skills" id="skills">
+        <div class="header">
+            <h2 class="upper">What I can work with</h2>
+            <div class="sectionContent">
+                <h3>Skills</h3>
+                <p>
+                    Java • C • C++ • Python • Golang • JavaScript • HTML • CSS • LaTeX • Dart
+                </p>
+                <h3>Frameworks</h3>
+                <p>
+                    React • Express • Node.js • Spring
+                </p>
+                <h3>Relevant Coursework</h3>
+                <p>Introduction to the Analysis of Algorithms</p>
+                <p>Operating Systems</p>
+                <p>Software Engineering Senior Project</p>
+                <p>Software Engineering</p>
+                <p>Software Testing</p>
+                <p>Information Systems</p>
+                <p>Systems Programming</p>
+                <p>Data Structures and Algorithms</p>
+                <p>iOS Development</p>
+                <p>Web Application Programming</p>
+                <p>Computer Architecture</p>
+                <p>Programming in C</p>
+                <p>Foundations of Computer Science</p>
+                <p>Object Oriented Programming</p>
+                <p>Probability</p>   
+                <p>Introduction to Statistics</p>      
+                <br />       
+            </div>
+            <div class="seeMore">
+                <a href="/courseList.html"><button class="skillsSeeMore">View Full Course List</button></a>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Smooth scrolling when clicking on a scroll link
+        document.querySelectorAll('#scroll-link').forEach(link => {
+            link.addEventListener('click', function (e) {
+            e.preventDefault();
+        
+            const targetId = this.getAttribute('href');
+            const targetElement = document.querySelector(targetId);
+            const targetOffsetTop = targetElement.offsetTop;
+            const scrollOptions = {
+                top: targetOffsetTop,
+                behavior: 'smooth'
+            };
+        
+            window.scrollTo(scrollOptions);
+            });
+        });
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="image"><img src="images/Profile Picture.jpg" height="270" alt="" /></span>
-						<h1>Rohan Purandare</h1>
-						<p>A computer science student at Purdue University</p>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">About Me</a></li>
-							<li><a href="#first">Projects</a></li>
-							<li><a href="#second">Experience</a></li>
-							<li><a href="#cta">Skills & Coursework</a></li>
-							<li><a href="#footer">Get In Touch</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-										<header class="major">
-											<h2>About Me</h2>
-										</header>
-										<p>Hello! My name is Rohan Purandare and I am a student at Purdue University
-										working towards getting a Bachelor of Science in Computer Science. At Purdue, 
-										I am involved in a number of clubs such as the <a href="https://purdueusb.com/" 
-										target="_blank"> Purdue Computer Science and Data Science Undergraduate Student Board</a>, <a 
-										href="https://boilerlink.purdue.edu/organization/launchpad/" target="_blank"> Purdue LaunchPad</a>, and
-										<a href="https://purduehackers.com/" target="_blank"> Purdue Hackers</a>.
-										In my free time, I love to watch and play soccer, play piano, sing, and solve
-										puzzles like the Rubik's cube.
-										</p>
-										<ul class="actions">
-											<li><a href="aboutMe.html" class="button">Learn More</a></li>
-										</ul>
-									</div>
-									<span class="image"><img src="images/About Me Pic.png" alt="" /></span>
-								</div>
-							</section>
-
-						<!-- First Section -->
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Projects</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style2 fa-gamepad"></span>
-										<h3><a href="https://dreamy-mirzakhani-ffc3be.netlify.app/" target="_blank">Dots and Numbers </a><a href="https://github.com/rohanpurandare/DotsAndNumbers" target="_blank" class="icon brands fa-github"></a></h3>
-										<p>A logic game inspired from a newspaper game made using JavaScript, HTML and CSS that challenges players to create a loop on the board such that each square has as many edges as the number inside the square.
-										This project was made in the Boilermake IX Hackathon in January 2022.</p>
-									</li>
-									<li>
-										<span class="icon solid major style4 fa-plane-departure"></span>
-										<h3>Boilermaker Airlines Graph Project</h3>
-										<p>A project made using Java that implemented Dijkstra and Kruskal's method to determine the optimal destinations that various flight should depart from and land.
-											This project was made in CS251 : Data Structures and Algorithms in November 2021.
-										</p>
-									</li>
-								</ul>
-								<ul class="features">
-									<li>
-										<span class="icon solid major style1 fa-shopping-cart"></span>
-										<h3><a href="https://github.com/misha-rahimi/ChromeCart" target="_blank">ChromeCart </a><a href="https://github.com/misha-rahimi/ChromeCart" target="_blank" class="icon brands fa-github"></a></h3>
-										<p>A chrome extension made using JavaScript, HTML, and CSS that combines a users cart from multiple sites like Amazon, Ebay, Walmart, and more into one compact window.
-										This project was made in the Boilermake VIII Hackathon in January 2021.</p>
-									</li>
-									<li>
-										<span class="icon solid major style3 fa-music"></span>
-										<h3><a href="https://github.com/rohanpurandare/SongSearcher" target="_blank">Song Searcher </a><a href="https://github.com/rohanpurandare/SongSearcher" target="_blank" class="icon brands fa-github"></a></h3>
-										<p>A web applications made using React, JavaScript, HTML, and CSS that allows users to search for songs by inputting the song lyrics and/or tempo.
-										This project was made with the help of a mentor as a part of LaunchPad in Fall 2020.</p>
-									</li>
-									<li>
-										<span class="icon solid major style5 fa-book"></span>
-										<h3><a href="https://github.com/rohanpurandare/ClassSearcher" target="_blank">Class Searcher </a><a href="https://github.com/rohanpurandare/ClassSearcher" target="_blank" class="icon brands fa-github"></a></h3>
-										<p>A web application made with JavaScript, Java, HTML, and CSS that allows Purdue students to find classes that satisfy multiple science core-requirements with greater ease.
-										This project was made in the Hello World Hackathon in October 2020.</p>
-									</li>
-									<li>
-										<span class="icon solid major style2 fa-camera-retro"></span>
-										<h3>Image Manipulator</h3>
-										<p>I analyzed each pixel from images of various dimensions and applied functions to them to retrieve and manipulate data from neighboring pixels, eventually applying various filters on the image in C.
-										This project was made in Harvard's CS50 course in July 2020.</p>
-									</li>
-									<li>
-										<span class="icon solid major style4 fa-robot"></span>
-										<h3>Virtual Assistant</h3>
-										<p>A program made in Java that allowed users to create a todo list as well as check the weather in various locations, using the AccuWeather API, and all of the major soccer games that were taking place that day using API-FOOTBALL's API.
-										This project was made in KTBytes' CS01B course in July 2018.</p>
-									</li>
-								</ul>
-							</section>
-
-						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>Experience</h2>
-								<!--	<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>-->
-								</header>
-								<div class="leftFormat">
-									<h3 class="exp"><strong>Course Lead/Undergraduate Teaching Assistant for CS 193: Tools - <i>Purdue University</i></strong></h3>
-									<h4 class="exp">West Lafayette, IN &nbsp;&nbsp;•&nbsp;&nbsp; August 2021 - Present</h4>
-									<p class="exp"> Initially starting this position as an Undergradutate Teaching Assistant, I graded homework, held office hours
-										as well as held Practice/Study/Observation sessions where I would answer any questions that students had and helped them with
-										whatever they were working on. Since, January 2022, I accepted the role to be the instructor for this course where I teach students
-										(approximately 700 students per year), the basics of git, terminal, and various programming techniques to help them create a strong
-										foundation for programming in their later years at Purdue. In addition to this, I also deal with communicating and hiring the
-										Undergraduate Teaching Assistants for this class.
-									<br>
-									<br>
-									<br>
-									<h3 class="exp"><strong>Software Development Intern - <i><a href="https://www.ptc.com/" target="_blank">PTC</a></i></strong></h3>
-									<h4 class="exp">Boston, MA &nbsp;&nbsp;•&nbsp;&nbsp; June 2021 - August 2021</h4>
-									<p class="exp"> Over the course of a ten-week long period, I interned with the PTC's Creo team. Over here, I specifically 
-										worked with their collaboration service team, who are responsible for allowing users to collaborate on the same 3D 
-										modeling document in Creo. My job was to automate the API Specification as it was previously written by hand. I 
-										incorporated a third-party tool called go-swagger and modified the code and wrote an external program to allow 
-										go-swagger to parse through the code and generate an API Spec. From here, I utilized another third-party tool called
-										swagger2openapi to convert the API Spec from Swagger 2.0 to OpenAPI 3.0.0
-									<br>
-									<br>
-									<br>
-									<h3 class="exp"><strong>Private Tutor</strong></h3>
-									<h4 class="exp">Lexington, MA &nbsp;&nbsp;•&nbsp;&nbsp; August 2019 - Present</h4>
-									<p class="exp"> I have been privately teaching middle school kids computer science and math. 
-										Even though they started out with no prior computer science knowledge, I was able to teach them the fundamentals 
-										and was able to help them create projects like connect-four and various ciphers. With math, I either help them with
-										their homework or I teach them material that is related to the content they learn at school. Since I am able to 
-										tutor these kids one-on-one, I create a lesson plan that is geared to each of their capabilities and needs. This has
-										been an incredibly rewarding experience as I have been able to witness first-hand how much more confidence these kids 
-										have gained in computer science and math. I also really value every interaction I have with my students because I 
-										learn how to become a better teacher. 
-									</p>
-								</div><!--
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon solid fa-code-branch"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon solid fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon solid fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-gem"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
-							--><footer class="major">
-									<ul class="actions special">
-										<li><a href="Resume.pdf" class="primary button" target="_blank">View Resume <i class="fa fa-download"></i></a></li>
-									</ul>
-								</footer>
-							</section>
-
-						<!-- Get Started -->
-							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Skills and Relevant Coursework</h2>
-								</header>
-									<div class="leftFormat">
-										<h2><b>Skills:</b></h2>
-										<p class="para">Java &nbsp;&nbsp;•&nbsp;&nbsp; C &nbsp;&nbsp;•&nbsp;&nbsp; C++ &nbsp;&nbsp;•&nbsp;&nbsp; Python
-											&nbsp;&nbsp;•&nbsp;&nbsp; Golang &nbsp;&nbsp;•&nbsp;&nbsp; JavaScript &nbsp;&nbsp;•&nbsp;&nbsp;
-											HTML &nbsp;&nbsp;•&nbsp;&nbsp; CSS &nbsp;&nbsp;•&nbsp;&nbsp; LaTeX &nbsp;&nbsp;•&nbsp;&nbsp; Dart
-										</p>
-										<br>
-										<h2><b>Relevant Coursework:</b></h2>
-										<p class="para">CS25200 - Systems Programming</p>
-										<br>
-										<p class="para">CS30700 - Software Engineering</p>
-										<br>
-										<p class="para">CS49000 - iOS Development</p>
-										<br>
-										<p class="para">CS25100 - Data Structures and Algorithms</p>
-										<br>
-										<p class="para">CS25000 - Computer Architecture</p>
-										<br>
-										<p class="para">CS24000 - Programming in C</p>
-										<br>
-										<p class="para">CS18200 - Foundations of Computer Science</p>
-										<br>
-										<p class="para">CS18000 - Problem Solving and Object-Oriented Programming</p>
-										<br>
-										<p class="para">MA26500 - Linear Algebra</p>
-										<br>
-										<p class="para">MA26100 - Multivariate Calculus</p>
-										<br>
-										<p class="para">STAT35000 - Intro to Statistics</p>
-									</div>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="courseList.html" class="button">View Full Course List</a></li>
-									</ul>
-								</footer>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Contact Details</h2>
-							<dl class="alt">
-								<dt>Phone</dt>
-								<dd>(617) 435-1077</dd>
-								<dt>Email</dt>
-								<dd><a href="mailto:rpuranda@purdue.edu">rpuranda@purdue.edu</a></dd>
-								<dt>Github</dt>
-								<dd><a href="https://github.com/rohanpurandare/" target="_blank">rohanpurandare</a></dd>
-								<dt>LinkedIn</dt>
-								<dd><a href="https://linkedin.com/in/rohanpurandare/" target="_blank">Rohan Purandare</a></dd>
-							</dl>
-						</section>
-						<p class="copyright">&copy; Rohan Purandare. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+        // Add 'active' class to the link corresponding to the current section
+        document.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('#navButton');
+            const profile = document.querySelector('#profileInfo');
+            const profilepic = document.querySelector('#profilepic');
+            const landing = document.querySelector('#landingPage');
+            const nav = document.querySelector('#nav');
+            const inactives = ['initial', 'inactive0', 'inactive1', 'inactive2', 'inactive3'];
+            let currentIndex;
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                const link = navLinks[index];
+                console.log(index, rect.top, rect.bottom, window.innerHeight)
+                if (index === 0)
+                    if (rect.top <= 3*window.innerHeight/4 && rect.bottom >= 3*window.innerHeight/4) {
+                        console.log("HELLO")
+                        profile.classList.remove("profileInfo");
+                        profile.classList.add("transformedProfileInfo");
+                        // landing.classList.add("landingPage");
+                        // landing.classList.remove("hiddenLandingPage");
+                        profilepic.classList.remove("profilepic");
+                        profilepic.classList.add("transformedProfilepic");
+                        nav.classList.remove("nav");
+                        nav.classList.add("transformedNav");
+                        for (let i = 0; i < navLinks.length; i++) {
+                            navLinks[i].classList.remove('inactive');
+                            navLinks[i].classList.remove('inactive0');
+                            navLinks[i].classList.remove('inactive1');
+                            navLinks[i].classList.remove('inactive2');
+                            navLinks[i].classList.remove('inactive3');
+                            navLinks[i].classList.add('initial');
+                        }
+                        currentIndex = index;
+                    }
+                    else {
+                        profile.classList.add("profileInfo");
+                        profile.classList.remove("transformedProfileInfo");
+                        profilepic.classList.add("profilepic");
+                        profilepic.classList.remove("transformedProfilepic");
+                        // landing.classList.remove("landingPage");
+                        // landing.classList.add("hiddenLandingPage");
+                        nav.classList.add("nav");
+                        nav.classList.remove("transformedNav");
+                        console.log("CURRENT INDEX IS: ", currentIndex);
+                        if (typeof currentIndex === 'undefined') {
+                            console.log(index, "default inactive");
+                            link.classList.add('inactive');
+                            for (let i = 0; i < 5; i++) {
+                                link.classList.remove(inactives[i]);
+                            }
+                            link.classList.remove('active');
+                        }
+                        else if (index > currentIndex) {
+                            console.log("link", link);
+                            link.classList.remove('active');
+                            console.log(index, "specific inactive");
+                            console.log(inactives[currentIndex]);
+                            for (let i = 0; i < 5; i++) {
+                                link.classList.remove(inactives[i]);
+                            }
+                            link.classList.add(inactives[currentIndex]);
+                        }
+                    }
+                else {
+                    if (rect.top <= window.innerHeight/2 && rect.bottom >= window.innerHeight/2) {
+                        if (index !== 0) {
+                            link.classList.add('active');
+                        }
+                        link.classList.remove('inactive');
+                        link.classList.remove('inactive0');
+                        link.classList.remove('inactive1');
+                        link.classList.remove('inactive2');
+                        link.classList.remove('inactive3');
+                        currentIndex = index;
+                    } else {
+                        if (typeof currentIndex === 'undefined') {
+                            link.classList.add('inactive');
+                            for (let i = 0; i < 5; i++) {
+                                link.classList.remove(inactives[i]);
+                            }
+                            link.classList.remove('active');
+                        }
+                        else if (index > currentIndex) {
+                            link.classList.remove('active');
+                            for (let i = 0; i < 5; i++) {
+                                link.classList.remove(inactives[i]);
+                            }
+                            link.classList.add(inactives[currentIndex]);
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
 </html>
