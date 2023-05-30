@@ -667,18 +667,18 @@
 
     .initialProfilePic {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
         transition: transform 0.2s ease-in-out;
         animation: 0.5s ease 0s normal forwards 1 fadeinDelay;
     }
 
     .transformedProfilepic {
         width: 100%;
-        max-width: 300px;
+        max-width: 250px;
     }
 
     .profilepic {
-        max-width: 300px;
+        max-width: 250px;
         transition: transform 0.2s ease-in-out;
         transform: translate(0, 0);
     }
