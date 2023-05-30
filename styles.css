@@ -710,6 +710,7 @@
     }
 
     .greeting {
+        margin-top: 20px;
         display: inline-block;
         max-width: 360px;
         left: 50%;
@@ -719,7 +720,7 @@
         overflow: hidden;
         white-space: nowrap;
         border-right: 2px solid;
-        font-size: 60px;
+        font-size: 40px;
         width: 0;
         animation: typing 2s steps(30, end) forwards, blinking 1s infinite;
     }
@@ -727,7 +728,7 @@
     .landingPage p {
         max-width: 510px;
         margin-top: -30px;
-        font-size: 30px;
+        font-size: 20px;
         animation: 4s ease 0s normal forwards 1 fadeinDelay;
     }
 
@@ -777,22 +778,22 @@
 
     .aboutMeButton {
         color: #00827c;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .projectsButton {
         color: #2c6d15;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .experienceButton {
         color: #824E00;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .skillsButton {
         color: #821F00;
-        font-size: 30px;
+        font-size: 20px;
     }
 
     .question {
