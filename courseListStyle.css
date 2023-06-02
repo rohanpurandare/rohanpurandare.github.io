@@ -85,3 +85,16 @@ a {
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 999px) {
+    .content {
+        font-family: "Quicksand", sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2vw;
+        width: 90vw;
+        min-height: 100vh;
+        background-color: #E5E4D2;
+    }
+}

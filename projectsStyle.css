@@ -112,3 +112,37 @@ a img:hover, a img:focus-visible {
         transform: translateY(0);
     }
 }
+
+@media screen and (max-width: 999px) {
+    .content {
+        font-family: "Quicksand", sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2vw;
+        width: 90vw;
+        min-height: 100vh;
+        background-color: #E5E4D2;
+    }
+
+    .project {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+    }
+    .projectpic {
+        min-width: 150px;
+        height: auto;
+    }
+    .projectTitle {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .langs {
+        opacity: 0.5;
+        text-align: center;
+    }
+}
