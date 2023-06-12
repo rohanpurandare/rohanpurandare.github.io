@@ -20,7 +20,7 @@
 <body>
     <div class="general">
         <div id=profile class="profile">
-            <img class="initialProfilePic" id="profilepic"src="./assets/Profile Picture.jpg" alt="Profile Picture" style="width: 70%; height:70%;"/>
+            <img class="initialProfilePic" id="profilepic"src="./assets/Profile Picture.jpg" alt="Profile Picture"/>
             <div class="transformedProfileInfo" id="profileInfo">
                 <h1>Rohan Purandare</h1>
                 <div class="socials">
@@ -284,7 +284,7 @@
                         // landing.classList.add("landingPage");
                         // landing.classList.remove("hiddenLandingPage");
                         profilepic.classList.remove("profilepic");
-                        profilepic.classList.add("transformedProfilepic");
+                        profilepic.classList.add("initialProfilePic");
                         nav.classList.remove("nav");
                         nav.classList.add("transformedNav");
                         for (let i = 0; i < navLinks.length; i++) {
@@ -301,7 +301,7 @@
                         profile.classList.add("profileInfo");
                         profile.classList.remove("transformedProfileInfo");
                         profilepic.classList.add("profilepic");
-                        profilepic.classList.remove("transformedProfilepic");
+                        profilepic.classList.remove("initialProfilePic");
                         // landing.classList.remove("landingPage");
                         // landing.classList.add("hiddenLandingPage");
                         nav.classList.add("nav");
