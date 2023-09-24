@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D38JCGHCL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8D38JCGHCL');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="songrecStyle.css">
+    <title>Song Recommendations</title>
+    <link rel="icon" type="png" href="assets/duck.png">
+</head>
+<body>
+    <div class="content">
+        <h1>Send me a song recommendation!</h1>
+        <p>I love listening to new music, so if you have a song that you love, please share it with me! I'd love to give it a listen and add it to my playlist.</p>
+        <div>
+            <div class="in-progress" id="completion">
+                <p>Your recommendation has been sent!</p>
+            </div>
+            <form id="form" class="form" onsubmit="return false;">
+                <label for="person-name">What's your name (so I know who to thank!)?</label>
+                <br>
+                <input type="text" name="person-name" id="person-name" placeholder="Name..." style="width: 40%; height: 30px;">
+                <br>
+                <label for="song">What is the link to your song recommendation?</label>
+                <br>
+                <input type="text" name="song" id="song" placeholder="Song link..." style="width: 40%; height: 30px;">
+                <br>
+                <label for="details">Anything I should pay close attention to in the song?</label>
+                <br>
+                <textarea name="details" id="details" placeholder="Song details..." style="width: 80%; height: 80px;"></textarea>
+                <br>
+                <button id="formSubmit" onclick="submitForm()">Submit</button>
+            </form>
+        </div> 
+        <div class="seeMore">
+            <button class="aboutSeeMore"><a href="/whatsup.html">Back</a></button>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        const form = document.getElementById("form");
+        const formElements = form.elements;
+        const formSubmit = document.getElementById("formSubmit");
+        const completion = document.getElementById("completion")
+        function submitForm() {
+            const name = formElements.item(0).value;
+            const song = formElements.item(1).value;
+            const details = formElements.item(2).value;
+            console.log(name, song, details);
+            document.getElementById("form").reset();
+            Email.send({
+                SecureToken : "81fcd9a8-ace9-4a10-80d2-5e8507b84a31",
+                To : 'rohan.purandare72@gmail.com',
+                From : "rohan.purandare72@gmail.com",
+                Subject : "You have a new song recommendation!",
+                Body : name + " suggested that you listen to " + song + ". When you do, make sure to pay close attention to " + details
+            }).then(
+            
+            );
+            completion.classList.remove("in-progress")
+            completion.classList.add("completed");
+            formSubmit.style.color = "#E5E4D2";
+            setTimeout(function(){
+                completion.classList.remove("completed");
+                completion.classList.add("in-progress")
+            }, 2000);
+            setTimeout(function() {
+                formSubmit.style.color = "#00827c";
+            }, 2200);
+        }
+    </script>
+</body>
+</html>

@@ -29,6 +29,7 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     padding: 2vw;
     width: 48vw;
     min-height: 100vh;
@@ -60,7 +61,7 @@ a {
     border-radius: 10px;
 }
 
-.aboutSeeMore:hover, .aboutSeeMore:focus-visible {
+.aboutSeeMore:hover, .aboutSeeMore:focus-visible, .rec:hover, .rec:focus-visible {
     transform: translateY(-0.25rem);
     transition: transform 0.2s ease-in-out;
 }
@@ -84,6 +85,21 @@ a {
     border: none;
     border-top: 1px solid #00827c; /* Set the desired color and thickness */
     margin: 1em 0; /* Adjust the margin as needed */
+}
+
+.rec {
+    background-color: #E5E4D2;
+    color: #333333;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #00827c;
 }
 
 /* Slideshow container */

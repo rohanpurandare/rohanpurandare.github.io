@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Quicksand&display=swap');
+
+body {
+    overflow-x: hidden;
+    font-family: "Quicksand", sans-serif;
+    margin: 0;
+    color: #333333;
+    background-color: #00827c;
+}
+
+button {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #E5E4D2;
+    color: #00827c;
+    border-radius: 10px;
+    border-width: 0;
+}
+
+a {
+    color: #E5E4D2;
+    text-decoration: none;
+}
+
+.content {
+    font-family: "Quicksand", sans-serif;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2vw;
+    width: 48vw;
+    min-height: 100vh;
+    background-color: #E5E4D2;
+}
+
+.content * {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #00827c;
+    color: #E5E4D2;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+input[type="text"] {
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    padding: 5px;
+}
+
+textarea {
+    font-family: "Quicksand", sans-serif;
+    font-size: 14px;
+    color: #333333;
+    padding: 5px;
+}
+
+textarea, input {
+    background-color: #E5E4D2;
+    border-radius: 5px;
+    border-width: 0;
+}
+
+.in-progress {
+    position: absolute;
+    top: 0;
+    background-color: #E5E4D2;
+    animation: formFadeIn 0.3s ease-in-out forwards;
+}
+
+.in-progress p {
+    visibility: hidden;
+}
+
+.completed {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    background-color: #E5E4D2;
+    animation: formFadeOut 0.6s ease-in-out forwards;
+}
+
+.completed p {
+    font-size: 30px;
+    opacity: 0;
+    color: #00827c;
+    animation: textFade 0.3s 0.3s ease-in forwards;
+}
+
+.seeMore {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.aboutSeeMore {
+    font-family: "Quicksand", sans-serif;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #00827c;
+    color: #E5E4D2;
+    border-radius: 10px;
+}
+
+.aboutSeeMore:hover, .aboutSeeMore:focus-visible, button:hover, button:focus-visible {
+    transform: translateY(-0.25rem);
+    transition: transform 0.2s ease-in-out;
+} 
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+  @keyframes formFadeIn {
+    0% {
+        width: 48%;
+        height: 100%;
+    }
+    100% {
+        width: 48%;
+        height: 0%;
+    }
+  }
+
+  @keyframes formFadeOut {
+    0% {
+        width: 48%;
+        height: 0%;
+    }
+    100% {
+        width: 48%;
+        height: 100%;
+    }
+    
+}
+
+@keyframes textFade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 999px) {
+    .content {
+        font-family: "Quicksand", sans-serif;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2vw;
+        width: 90vw;
+        min-height: 100vh;
+        background-color: #E5E4D2;
+    }
+
+    .song {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .songDetails {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 20px;
+    }
+
+    @keyframes formFadeIn {
+        0% {
+            width: 90%;
+            height: 100%;
+        }
+        100% {
+            width: 90%;
+            height: 0%;
+        }
+    }
+  
+    @keyframes formFadeOut {
+      0% {
+          width: 90%;
+          height: 0%;
+      }
+      100% {
+          width: 90%;
+          height: 100%;
+      }
+    }
+}
