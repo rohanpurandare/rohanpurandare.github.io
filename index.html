@@ -18,6 +18,24 @@
     <title>Rohan Purandare</title>
 </head>
 <body>
+    <div class="menu" id="menu">
+        <button id="closeMenu">
+            <div class="x-container">
+                <div class="x-line x-line-1"></div>
+                <div class="x-line x-line-2"></div>
+              </div>              
+        </button>
+        <br>
+        <img src="./assets/Profile Picture.jpg" alt="Profile Picture" style="width: 60vw; height: auto; max-width: 300px;"/>
+        <br>
+        <button id='menuButton'><a href="#aboutMe" id="scroll-link" class='aboutMeButton' style="font-size: 36px;">About me</a></button>
+        <br>
+        <button id='menuButton'><a href="#projects" id="scroll-link" class='projectsButton' style="font-size: 36px;">Projects</a></button>
+        <br>
+        <button id='menuButton'><a href="#experience" id="scroll-link" class='experienceButton' style="font-size: 36px;">Experience</a></button>
+        <br>
+        <button id='menuButton'><a href="#skills" id="scroll-link" class='skillsButton' style="font-size: 36px;">Skills</a></button>
+    </div>
     <div class="general">
         <div id=profile class="profile">
             <img class="initialProfilePic" id="profilepic"src="./assets/Profile Picture.jpg" alt="Profile Picture"/>
@@ -37,6 +55,18 @@
             <button id='navButton'><a href="#projects" id="scroll-link" class="initial">Projects</a></button>
             <button id='navButton'><a href="#experience" id="scroll-link" class="initial">Experience</a></button>
             <button id='navButton'><a href="#skills" id="scroll-link" class="initial">Skills</a></button>
+        </div>
+        <div class="mobileHeader">
+            <div class="mobileNav" id="mobileNav">
+                <h2 class="mobileNavPage" id="mobileNavPage"></h2>
+                <button id="mobileNavButton">
+                    <div class="bars" id="bars">
+                        <div class="bar" id="bar"></div>
+                        <div class="bar" id="bar"></div>
+                        <div class="bar" id="bar"></div>
+                    </div>
+                </button>
+            </div>
         </div>
     </div>
     <section class="intro" id="intro">
@@ -64,15 +94,15 @@
             One of my favorite things about Purdue is the myriad of organizations that it has. There is really something for everyone! I am personally a part of three different organizations: BoilerMake, the Undergraduate Student Board for Computer Science (USB), and LaunchPad.<br /><br />
             <div class="textImg">
                 <p>I am currently the Director of BoilerMake, an organization that hosts Purdue's largest hackathon. Lasting 36 hours, we give about 500 students the opportunity to work on projects, network with sponsors and other hackers, and have a fun break from school.</p>
-                <img src="assets/bm.JPG" alt="BoilerMake" style="width:22vw; min-width:300px; border-radius: 0; padding-left: 10px;">
+                <img src="assets/bm.JPG" alt="BoilerMake" style="width:22vw; min-width:300px; border-radius: 0; padding-left: 10px; padding-right: 10px;">
             </div>
             <div class="textImg">
                 <p>USB is an organization that works to improve the CS department at Purdue through a number of initiatives. Formerly the Vice-President of USB, I have now shifted my focus towards leading the Humans of Purdue CS initiative, an initiative that hopes to emulate <a href="https://www.humansofnewyork.com/" target="_blank" style="color: #333333; text-decoration: underline;">HoNY</a>. In addition to that, I am also a member of the International Student Panel, an initiative geared towards helping international students with job prospects, and CS193, an initiative geared towards freshmen in CS/DS/AI to help them learn some of the fundamentals of CS.</p>
-                <img src="assets/usb_group_2022.webp" alt="BoilerMake" style="width:22vw; min-width:300px; border-radius: 0; padding-left: 10px;">
+                <img src="assets/usb_group_2022.webp" alt="BoilerMake" style="width:22vw; min-width:300px; border-radius: 0; padding-left: 10px; padding-right: 10px;">
             </div>
             <div class="textImg">
                 <p>LaunchPad is an organization that pairs freshmen - mentees - in a CS-related major with upperclassmen - mentors - in similar majors to work on creating a project of the mentee's choosing. Within LaunchPad, I am currently the Web Dev lead where I lead a group of 4 other LaunchPad organizers to create and maintain our website.</p>
-                <img src="assets/lp.jpg" alt="LaunchPad" style="width:22vw; min-width:300px; border-radius: 0; padding-left: 10px;">
+                <img src="assets/lp.jpg" alt="LaunchPad" style="width:22vw; min-width:300px; border-radius: 0; padding-left: 10px; padding-right: 10px;">
             </div>
             <br /><br />
             Outside of these organizations, I am also involved in TA-ing. I have currently TA-ed CS 38100 (The Introduction of the Analysis of Algorithms) and TA-ed and taught CS 19300 (Tools). I find it to be extremely rewarding and fun as I am able to give back to the CS community while helping students find their "aha!" moment.
@@ -237,7 +267,7 @@
         </div>
     </section>
     <section class="contactMe">
-        <h2 class="upper">Contact me!</h2>
+        <h2>Contact me!</h2>
         <div class="socials">
             <p class="link"><a href="mailto:rpuranda@purdue.edu"><img src="./assets/email.PNG" alt="email" class="icons"/> rpuranda@purdue.edu</a></p>
             <p class="noLink"><img src="./assets/phone.PNG" alt="phone" class="icons"/>(617) 435-1077</p>
@@ -246,11 +276,13 @@
         </div>
     </section>
     <script>
+        const navMenu = document.getElementById('menu');
+
         // Smooth scrolling when clicking on a scroll link
         document.querySelectorAll('#scroll-link').forEach(link => {
             link.addEventListener('click', function (e) {
             e.preventDefault();
-        
+            navMenu.style.visibility = 'hidden';
             const targetId = this.getAttribute('href');
             const targetElement = document.querySelector(targetId);
             const targetOffsetTop = targetElement.offsetTop;
@@ -271,17 +303,27 @@
             const profilepic = document.querySelector('#profilepic');
             const landing = document.querySelector('#landingPage');
             const nav = document.querySelector('#nav');
+            const mobileNav = document.querySelector('#mobileNav');
+            const mobileNavPage = document.querySelector('#mobileNavPage');
+            const bars = document.querySelectorAll("#bar");
             const inactives = ['initial', 'inactive0', 'inactive1', 'inactive2', 'inactive3'];
+            const colors = ['#00827c', '#2c6d15', '#824E00', '#821F00']
+            const pageNames = ["About Me", "Projects", "Experience", "Skills"]
             let currentIndex;
             sections.forEach((section, index) => {
                 const rect = section.getBoundingClientRect();
                 const link = navLinks[index];
                 console.log(index, rect.top, rect.bottom, window.innerHeight)
-                if (index === 0)
+                if (index === 0) {
                     if (rect.top <= 3*window.innerHeight/4 && rect.bottom >= 3*window.innerHeight/4) {
-                        console.log("HELLO")
+                        console.log("current page is intro page");
                         profile.classList.remove("profileInfo");
                         profile.classList.add("transformedProfileInfo");
+                        mobileNav.style.visibility = "hidden";
+                        mobileNavPage.style.visibility = "hidden";
+                        bars.forEach((bar) => {
+                            bar.style.visibility = "hidden";
+                        });
                         // landing.classList.add("landingPage");
                         // landing.classList.remove("hiddenLandingPage");
                         profilepic.classList.remove("profilepic");
@@ -303,6 +345,11 @@
                         profile.classList.remove("transformedProfileInfo");
                         profilepic.classList.add("profilepic");
                         profilepic.classList.remove("initialProfilePic");
+                        mobileNav.style.visibility = "hidden";
+                        mobileNavPage.style.visibility = "hidden";
+                        bars.forEach((bar) => {
+                            bar.style.visibility = "hidden";
+                        });
                         // landing.classList.remove("landingPage");
                         // landing.classList.add("hiddenLandingPage");
                         nav.classList.add("nav");
@@ -327,10 +374,20 @@
                             link.classList.add(inactives[currentIndex]);
                         }
                     }
+                }
                 else {
                     if (rect.top <= window.innerHeight/2 && rect.bottom >= window.innerHeight/2) {
+                        console.log("current page is " + (index + 1));
                         if (index !== 0) {
                             link.classList.add('active');
+                            mobileNav.style.visibility = "visible";
+                            mobileNavPage.style.visibility = "visible";
+                            mobileNavPage.style.color = colors[index - 1];
+                            mobileNavPage.textContent = pageNames[index - 1];
+                            bars.forEach((bar) => {
+                                bar.style.visibility = "visible";
+                                bar.style.backgroundColor = colors[index - 1];
+                            });
                         }
                         link.classList.remove('inactive');
                         link.classList.remove('inactive0');
@@ -357,6 +414,22 @@
                 }
             });
         });
+    
+        // Opening nav menu
+        const openNavButton = document.getElementById('mobileNavButton');
+        console.log(navMenu.style.visibility)
+        openNavButton.addEventListener('click', function () {
+            navMenu.style.visibility = 'visible';
+        });
+
+        // Closing nav menu
+        const closeNavButton = document.getElementById('closeMenu');
+        console.log(navMenu.style.visibility)
+        closeNavButton.addEventListener('click', function () {
+            navMenu.style.visibility = 'hidden';
+        });
+        
+
     </script>
 </body>
 </html>
