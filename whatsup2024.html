@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8D38JCGHCL"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8D38JCGHCL');
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="whatsupStyle.css">
+    <title>What I'm up to</title>
+    <link rel="icon" type="png" href="assets/duck.png">
+</head>
+<body>
+    <div class="content">
+        <h1>What I'm up to in 2024!</h1>
+        <div class="event">
+            <h2>BoilerMake XI</h2>
+            <p>This past weekend (1/19 - 1/21), I directed BoilerMake XI, Purdue's largest hackathon along with the rest of the BoilerMake executive team. 
+                Being 36 hours long, there were several components of the event that we needed to plan such as application logistics, the mini-events that
+                occurred throughout, swag, judging formats, and more. Though brainstorming ideas for the different components was a lot of fun, it became 
+                challenging to ensure that everything would be feasible and within the budget. Fortunately, I was working with such a wonderful and talented 
+                group of people that BoilerMake meetings became something that I really looked forward to. In addition to this, the executive team played 
+                an integral to make sure that the hackathon ran as smoothly as it did. Even though we ran into a few hiccups during the event, we were able 
+                to quickly pivot and figure out workarounds to ensure that our hackers and sponsors had a great time at BoilerMake XI. Ultimately, we were 
+                proud to have hosted around 350 hackers who created about 70 fascinating projects along with 10 companies who generously sponsored our event.
+            </p>
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+    
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                        <img src="assets/leads.JPG" style="width:100%; height:100%;">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="assets/hackers.JPG" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="assets/openingCeremonies.JPG" style="width:100%">
+                    </div>
+    
+                    <div class="mySlides fade">
+                        <img src="assets/team.JPG" style="width:100%">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="assets/director.JPG" style="width:100%">
+                    </div>
+    
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <!-- The dots/circles -->
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
+                    </div>
+                </div>
+        </div>        
+        <div class="seeMore">
+            <div class="aboutSeeMore" style="visibility: hidden;"><</div>
+            <button class="aboutSeeMore"><a href="/index.html#aboutMe">Back</a></button>
+            <button class="aboutSeeMore"><a href="/whatsup2023.html">></a></button>
+        </div>
+    </div>
+    <a href="songrec.html" class="rec">
+        Send me a song rec!
+    </a>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].classList.add("hideSlide");
+                slides[i].classList.remove("showSlide");
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].classList.add("showSlide");
+            slides[slideIndex-1].classList.remove("hideSlide");
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
