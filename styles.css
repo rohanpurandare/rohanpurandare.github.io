@@ -2,9 +2,10 @@
 
 @media screen and (min-width: 1000px) and (min-height: 620px){
     
-    html {
+    /* html {
         scroll-snap-type: y proximity;
-    }
+        scroll-behavior: smooth;
+    } */
 
     body {
         overflow-x: hidden;
@@ -624,9 +625,9 @@
 
 @media screen and (min-width: 1000px) and (max-height: 619px){
     
-    html {
+    /* html {
         scroll-snap-type: y proximity;
-    }
+    } */
 
     body {
         overflow-x: hidden;
@@ -1247,9 +1248,9 @@
 }
 
 @media screen and (max-width: 999px) {
-    html {
+    /* html {
         scroll-snap-type: y proximity;
-    }
+    } */
 
     body {
         overflow-x: hidden;
